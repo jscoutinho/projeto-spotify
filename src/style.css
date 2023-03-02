@@ -1,0 +1,94 @@
+@font-face {
+    font-family: "Circular Book";
+    src: url("Circular/CircularStd-Book.otf") format("Opentype");
+}
+@font-face {
+    font-family: "Circular Bold";
+    src: url("Circular/CircularStd-Bold.otf")
+    format("Opentype");
+}
+@font-face {
+    font-family: "Circular Black";
+    src: url("Circular/CircularStd-Black.otf")
+    format("Opentype");
+}
+
+:root{
+    --fonte-padrão: "Circular Book";
+    --fonte-titulo: "Circular Black";
+    --fonte-negrito: "Circular Bold";
+
+    --secao-fundo: #f037a5;
+    --brilho-texto: #117a37;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family: var(--fonte-padrão);
+}
+
+header{
+    font-family: var(--fonte-negrito);
+    font-size: 20px;
+
+    background-color: black;
+    color: white;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo-header{
+    width: 166px;
+}
+
+header div{
+    margin: 25px 25px 21px 106px;
+}
+
+header nav{
+    margin-right: 20px;
+}
+
+header ul{
+    list-style-type: none;
+
+    display: flex;
+    align-items: center;
+}
+
+header li{
+    padding: 0px 20px;
+}
+
+header ul .linha{
+    width: 1px;
+    background-color: white;
+    height: 23px;
+    padding: 0px;
+}
+
+header .perfil{
+    display: flex;
+    align-items: center;
+
+}
+
+header .perfil img{
+    width: 60px;
+    border-radius: 50%;
+}
+
+header .perfil button{
+    color: white;
+    background-color: black;
+    border: none;
+
+    font-size: 20px;
+    font-family: var(--fonte-negrito);
+}
