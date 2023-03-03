@@ -19,7 +19,7 @@
     --fonte-negrito: "Circular Bold";
 
     --secao-fundo: #f037a5;
-    --brilho-texto: #117a37;
+    --brilho-texto: #1ed760;
 }
 
 *{
@@ -33,7 +33,7 @@ body{
 
 header{
     font-family: var(--fonte-negrito);
-    font-size: 20px;
+    font-size: 19px;
 
     background-color: black;
     color: white;
@@ -48,7 +48,7 @@ header .logo-header{
 }
 
 header div{
-    margin: 25px 25px 21px 106px;
+    margin: 25px 25px 21px 115px;
 }
 
 header nav{
@@ -60,6 +60,8 @@ header ul{
 
     display: flex;
     align-items: center;
+
+    margin: 25px 56px 21px 21px;
 }
 
 header li{
@@ -71,17 +73,24 @@ header ul .linha{
     background-color: white;
     height: 23px;
     padding: 0px;
+
+    margin-left: 20px;
 }
 
 header .perfil{
     display: flex;
     align-items: center;
 
+    cursor: pointer;
+    padding: 0px;
+    margin: 0px 20px;
 }
 
 header .perfil img{
-    width: 60px;
+    width: 50px;
     border-radius: 50%;
+
+    margin: 0px 10px 0px 20px;
 }
 
 header .perfil button{
@@ -89,6 +98,17 @@ header .perfil button{
     background-color: black;
     border: none;
 
-    font-size: 20px;
+    font-size: 19px;
     font-family: var(--fonte-negrito);
+
+    padding: 0px 2px 0px 10px;
+    cursor: pointer;
+}
+
+header .perfil:hover > button{
+    color: var(--brilho-texto);
+}
+
+header .perfil .seta-perfil{
+    width: 15px;
 }
