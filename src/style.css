@@ -48,6 +48,7 @@ header{
 header .logo-header{
     width: 166px;
     margin-top: 2px;
+    cursor: pointer;
 }
 
 header div{
@@ -202,12 +203,34 @@ main .porque-premium h2{
 }
 
 main .porque-premium ul{
-    display: flex;
+    margin-right: 20px;
 
+    display: flex;
     justify-content: center;
+
+    margin-top: 83px;
+}
+
+main .porque-premium ul li{
+    padding: 0px 15px;
+}
+
+main .porque-premium ul .li-esquerda{
+    padding: 0px 50px 0px 120px;
 }
 
 main .porque-premium ul li img{
-    width: 142px;
-    height: 142px;
+    width: 180px;
+    height: 180px;
+}
+
+main .porque-premium ul li .titulo{
+    font-family: var(--fonte-titulo);
+    font-size: 26px;
+    padding-top: 45px;
+}
+
+main .porque-premium ul li p{
+    font-size: 20px;
+    padding-top: 15px;
 }
